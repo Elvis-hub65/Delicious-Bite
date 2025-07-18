@@ -112,11 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.add-to-cart-btn').forEach(button => {
         button.addEventListener('click', (e) => {
-            if (localStorage.getItem('loggedIn') !== 'true') {
-                alert('Please log in to add items to your cart.');
-                window.location.href = 'login.html';
-                return;
-            }
+            // Removed login check to allow adding items without login
             const menuItem = e.target.closest('.menu-item');
             const name = menuItem.getAttribute('data-name');
             // Accept all currencies by parsing price as float, ignoring currency symbols

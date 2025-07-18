@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login - Delicious Bites</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Delicious Bites - Home</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         html {
@@ -13,27 +13,43 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login to Delicious Bites</h2>
-        <form id="login-form" action="#" method="POST">
-            <label for="email">Email or Username:</label>
-            <input type="text" id="email" name="email" required />
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required />
-            <button type="submit" class="btn-primary">Login</button>
-        </form>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" tabindex="0">Delicious Bites</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="home.html" class="nav-link" role="menuitem" tabindex="0">Home</a></li>
+                <li role="none"><a href="menu.html" class="nav-link" role="menuitem" tabindex="0">Menu</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem" tabindex="0">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem" tabindex="0">Contact</a></li>
+                <li role="none"><a href="payment.html" class="nav-link" role="menuitem" tabindex="0">Payment</a></li>
+            </ul>
+            <select id="currency-selector" aria-label="Select currency" style="margin-left: 10px; padding: 5px; z-index: 1100; display: inline-block; vertical-align: middle;">
+                <option value="$">$ USD</option>
+                <option value="GHC">GHC Cedis</option>
+                <option value="€">€ Euro</option>
+                <option value="£">£ Pound</option>
+            </select>
+            <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation" style="margin-left: 10px; vertical-align: middle;">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-        <div class="social-login-buttons">
-            <a href="#" class="social-login-button google" aria-label="Login with Google">
-                <i class="fab fa-google"></i> Google
-            </a>
-            <a href="#" class="social-login-button facebook" aria-label="Login with Facebook">
-                <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="#" class="social-login-button instagram" aria-label="Login with Instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-        </div>
-    </div>
+    <main>
+        <section class="content-section">
+            <h1>Welcome to Delicious Bites</h1>
+            <p>Enjoy our delicious menu and great service.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Delicious Bites. All rights reserved.</p>
+        <p>
+            Follow us:
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
 </body>
 </html>
