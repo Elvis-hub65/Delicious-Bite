@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu - Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" tabindex="0">Delicious Bites</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="home.html" class="nav-link" role="menuitem" tabindex="0">Home</a></li>
+                <li role="none"><a href="menu.html" class="nav-link" role="menuitem" tabindex="0">Menu</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem" tabindex="0">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem" tabindex="0">Contact</a></li>
+                <li role="none"><a href="payment.html" class="nav-link" role="menuitem" tabindex="0">Payment</a></li>
+                <li role="none"><a href="login.html" class="nav-link" role="menuitem" tabindex="0">Login</a></li>
+            </ul>
+            <select id="currency-selector" aria-label="Select currency" style="margin-left: 10px; padding: 5px; z-index: 1100; display: inline-block; vertical-align: middle;">
+                <option value="$">$ USD</option>
+                <option value="GHC">GHC Cedis</option>
+                <option value="€">€ Euro</option>
+                <option value="£">£ Pound</option>
+            </select>
+            <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation" style="margin-left: 10px; vertical-align: middle;">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu" class="content-section">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-name="Margherita Pizza" data-price="12">
+                    <img src="/restaurant/food/margherita pizza.jpeg" alt="Margherita Pizza" />
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza with fresh tomatoes, mozzarella, and basil.</p>
+                    <span class="price">$12</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Grilled Salmon" data-price="18">
+                    <img src="/restaurant/food/Grilled-Salmon-10.jpg" alt="Grilled Salmon" />
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon grilled to perfection with lemon butter sauce.</p>
+                    <span class="price">$18</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Caesar Salad" data-price="9">
+                    <img src="/restaurant/food/caesar salad.jpeg" alt="Caesar Salad" />
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce with Caesar dressing and croutons.</p>
+                    <span class="price">$9</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Spaghetti Carbonara" data-price="14">
+                    <img src="/restaurant/food/spaghetti.jpg" alt="Spaghetti Carbonara" />
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Classic Italian pasta with eggs, cheese, pancetta, and pepper.</p>
+                    <span class="price">$14</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="BBQ Chicken Wings" data-price="11">
+                    <img src="/restaurant/food/bbq chicken.jpeg" alt="BBQ Chicken Wings" />
+                    <h3>BBQ Chicken Wings</h3>
+                    <p>Juicy chicken wings tossed in tangy BBQ sauce.</p>
+                    <span class="price">$11</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Veggie Burger" data-price="13">
+                    <img src="/restaurant/food/veggie burger.jpg" alt="Veggie Burger" />
+                    <h3>Veggie Burger</h3>
+                    <p>Delicious plant-based burger with fresh veggies and sauce.</p>
+                    <span class="price">$13</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Chocolate Lava Cake" data-price="7">
+                    <img src="/restaurant/food/chocolate lava.webp" alt="Chocolate Lava Cake" />
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with a gooey molten center.</p>
+                    <span class="price">$7</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cocktails" class="content-section">
+            <h2>Cocktails</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-name="Bel Cola" data-price="5">
+                    <img src="/restaurant/cocktail/BEL COLA.jpeg" alt="Bel Cola" />
+                    <h3>Bel Cola</h3>
+                    <p>Classic tequila-based cocktail with lime and triple sec.</p>
+                    <span class="price">Ghc5</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Puka" data-price="5">
+                    <img src="/restaurant/cocktail/Puka.jpeg" alt="Puka" />
+                    <h3>Puka</h3>
+                    <p>Refreshing rum cocktail with mint, lime, and soda water.</p>
+                    <span class="price">GHC5</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Beta Malt" data-price="10">
+                    <img src="/restaurant/cocktail/beta malt.jpeg" alt="Beta Malt" />
+                    <h3>Beta Malt</h3>
+                    <p>Vodka cocktail with cranberry juice, lime, and triple sec.</p>
+                    <span class="price">GHC10</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Bigoo Orange" data-price="5">
+                    <img src="/restaurant/cocktail/bigoo.jpeg" alt="Bigoo Orange" />
+                    <h3>Bigoo Orange</h3>
+                    <p>Sweet rum cocktail with pineapple juice and coconut cream.</p>
+                    <span class="price">GHC5</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="cart.js"></script>
+    <script>
+        // Mobile menu toggle with accessibility
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            const expanded = burger.getAttribute('aria-expanded') === 'true' || false;
+            burger.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+
+        // Currency selector change handler
+        const currencySelector = document.getElementById('currency-selector');
+        currencySelector.value = localStorage.getItem('currencySymbol') || '$';
+        currencySelector.addEventListener('change', (e) => {
+            localStorage.setItem('currencySymbol', e.target.value);
+            // Update cart UI if open
+            const event = new Event('cartUpdated');
+            document.dispatchEvent(event);
+        });
+
+        // Listen for cart update event to refresh cart UI
+        document.addEventListener('cartUpdated', () => {
+            if (typeof updateCartUI === 'function') {
+                updateCartUI();
+            }
+        });
+    </script>
+
+    <footer>
+        <p>© 2024 Delicious Bites. All rights reserved.</p>
+        <p>
+            Follow us:
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+</body>
+</html>

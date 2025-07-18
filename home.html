@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" tabindex="0">Delicious Bites</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="home.html" class="nav-link" role="menuitem" tabindex="0">Home</a></li>
+                <li role="none"><a href="menu.html" class="nav-link" role="menuitem" tabindex="0">Menu</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem" tabindex="0">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem" tabindex="0">Contact</a></li>
+                <li role="none"><a href="payment.html" class="nav-link" role="menuitem" tabindex="0">Payment</a></li>
+            </ul>
+            <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Delicious Bites</h1>
+            <p>Experience the best flavors in town!</p>
+            <button class="btn-primary">Reserve a Table</button>
+        </section>
+    </main>
+
+    <script>
+        // Mobile menu toggle with accessibility
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            const expanded = burger.getAttribute('aria-expanded') === 'true' || false;
+            burger.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+    <footer>
+        <p>© 2024 Delicious Bites. All rights reserved.</p>
+        <p>
+            Follow us:
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+</body>
+</html>

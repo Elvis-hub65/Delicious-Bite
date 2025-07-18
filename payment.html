@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment Methods - Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .payment-methods {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            background: #fff url('/restaurant/background/shapelined-_JBKdviweXI-unsplash.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .payment-methods h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #d35400;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-shadow: 0 2px 6px rgba(211, 84, 0, 0.5);
+        }
+        .method {
+            margin-bottom: 20px;
+        }
+        .method h3 {
+            margin-bottom: 8px;
+            color: #e67e22;
+            font-weight: 700;
+            font-size: 22px;
+            text-shadow: 0 1px 3px rgba(230, 126, 34, 0.7);
+        }
+        .method p {
+            margin: 0;
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        form.payment-form, form.mtn-mobile-money-form, form.telecel-cash-form {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            padding: 30px 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+        }
+        form h3 {
+            margin-bottom: 25px;
+            color: #d35400;
+            font-weight: 700;
+            font-size: 26px;
+            letter-spacing: 1.2px;
+            text-shadow: 0 2px 6px rgba(211, 84, 0, 0.6);
+        }
+        label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #3a3a3a;
+            font-size: 15px;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.7);
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 14px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            resize: vertical;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: inset 0 0 10px rgba(255,255,255,0.6);
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #333;
+            transition: box-shadow 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+            outline: none;
+            border-color: #d35400;
+            box-shadow: 0 0 12px 3px #e67e22cc;
+            background-color: rgba(255, 255, 255, 0.45);
+        }
+        button.btn-primary {
+            background: linear-gradient(45deg, #d35400, #e67e22);
+            color: white;
+            padding: 14px 0;
+            border: none;
+            border-radius: 16px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(211, 84, 0, 0.6);
+        }
+        button.btn-primary:hover {
+            background: linear-gradient(45deg, #e67e22, #d35400);
+            box-shadow: 0 10px 30px rgba(230, 126, 34, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" tabindex="0">Delicious Bites</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="home.html" class="nav-link" role="menuitem" tabindex="0">Home</a></li>
+                <li role="none"><a href="menu.html" class="nav-link" role="menuitem" tabindex="0">Menu</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem" tabindex="0">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem" tabindex="0">Contact</a></li>
+                <li role="none"><a href="payment.html" class="nav-link" role="menuitem" tabindex="0">Payment</a></li>
+            </ul>
+            <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-methods">
+            <h2>Payment Methods</h2>
+            <p>We offer multiple convenient payment options to make your ordering experience seamless and secure. Choose the method that suits you best:</p>
+            <div class="method">
+       
+            </div>
+            <form class="payment-form" action="#" method="post" style="margin-top: 30px;">
+                <h3>Enter Payment Details</h3>
+                <label for="name">Name on Card:</label><br />
+                <textarea id="name" name="name" rows="1" cols="40" placeholder="Full name as on card"></textarea><br /><br />
+                <label for="card-number">Card Number:</label><br />
+                <textarea id="card-number" name="card-number" rows="1" cols="40" placeholder="XXXX-XXXX-XXXX-XXXX"></textarea><br /><br />
+                <label for="expiry">Expiry Date:</label><br />
+                <textarea id="expiry" name="expiry" rows="1" cols="20" placeholder="MM/YY"></textarea><br /><br />
+                <label for="cvv">CVV:</label><br />
+                <textarea id="cvv" name="cvv" rows="1" cols="10" placeholder="XXX"></textarea><br /><br />
+                <label for="notes">Additional Notes:</label><br />
+                <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special instructions or requests"></textarea><br /><br />
+                <button type="submit" class="btn-primary">Submit Payment</button>
+            </form>
+
+            <form class="mtn-mobile-money-form" action="#" method="post" style="margin-top: 30px;">
+                <h3>MTN Mobile Money Payment</h3>
+                <label for="mtn-phone">Phone Number:</label><br />
+                <input type="text" id="mtn-phone" name="mtn-phone" placeholder="Enter your MTN Mobile Money number" size="40" /><br /><br />
+                <label for="mtn-amount">Amount:</label><br />
+                <input type="number" id="mtn-amount" name="mtn-amount" placeholder="Enter amount to pay" /><br /><br />
+                <label for="mtn-transaction">Transaction ID:</label><br />
+                <input type="text" id="mtn-transaction" name="mtn-transaction" placeholder="Enter transaction ID" size="40" /><br /><br />
+                <button type="submit" class="btn-primary">Submit MTN Payment</button>
+            </form>
+
+            <form class="telecel-cash-form" action="#" method="post" style="margin-top: 30px;">
+                <h3>Telecel Cash Payment</h3>
+                <label for="telecel-phone">Phone Number:</label><br />
+                <input type="text" id="telecel-phone" name="telecel-phone" placeholder="Enter your Telecel Cash number" size="40" /><br /><br />
+                <label for="telecel-amount">Amount:</label><br />
+                <input type="number" id="telecel-amount" name="telecel-amount" placeholder="Enter amount to pay" /><br /><br />
+                <label for="telecel-transaction">Transaction ID:</label><br />
+                <input type="text" id="telecel-transaction" name="telecel-transaction" placeholder="Enter transaction ID" size="40" /><br /><br />
+                <button type="submit" class="btn-primary">Submit Telecel Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // Mobile menu toggle with accessibility
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            const expanded = burger.getAttribute('aria-expanded') === 'true' || false;
+            burger.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+    <footer>
+        <p>© 2024 Delicious Bites. All rights reserved.</p>
+        <p>
+            Follow us:
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+</body>
+</html>

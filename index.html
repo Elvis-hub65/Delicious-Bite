@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Delicious Bites</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Delicious Bites</h2>
+        <form id="login-form" action="#" method="POST">
+            <label for="email">Email or Username:</label>
+            <input type="text" id="email" name="email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit" class="btn-primary">Login</button>
+        </form>
+
+        <div class="social-login-buttons">
+            <a href="#" class="social-login-button google" aria-label="Login with Google">
+                <i class="fab fa-google"></i> Google
+            </a>
+            <a href="#" class="social-login-button facebook" aria-label="Login with Facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="#" class="social-login-button instagram" aria-label="Login with Instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
+</body>
+</html>
